@@ -1,4 +1,8 @@
 ---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
 const HomePage = "Home Page";
 ---
 
@@ -12,9 +16,10 @@ const HomePage = "Home Page";
 		<title>{HomePage}</title>
 	</head>
 	<body>
-		<a href="/">Home</a>
-		<a href="/blog/">Blog</a>
-		<a href="/about/">About</a>
+		<Header />
 		<h1>{HomePage}</h1>
+		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos minus ipsa ratione quam obcaecati harum inventore ex eaque ipsum rerum explicabo assumenda quasi corporis quod maxime fugiat consectetur, quaerat quibusdam!</p>
+		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint dolor quae eveniet, obcaecati voluptatem, animi consectetur quia voluptates ipsam impedit cumque nam facilis eos quod dolores voluptate eum accusamus nesciunt.</p>
+		<Footer />
 	</body>
 </html>
